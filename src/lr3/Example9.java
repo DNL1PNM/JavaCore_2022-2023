@@ -1,8 +1,7 @@
-package lr2;
-import java.util.Arrays; // пакет для подключения класса Arrays, для сортировки элементов массива по возрастанию
+package lr3;
 import java.util.Random; // пакет для подключения класса Random и создания объекта для генерации случайного числа
 import java.util.Scanner; // пакет для подключения класса Scanner, для считывания с консоли значения
-import java.util.*;
+
 public class Example9 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in); // Создание объекта класса Scanner для считывания числа введённого к консоль

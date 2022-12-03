@@ -1,4 +1,4 @@
-package lr2;
+package lr3;
 import java.util.Arrays;
 import java.util.Scanner;
 public class Example4 {
