@@ -1,4 +1,4 @@
-package lr2;
+package lr3;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
