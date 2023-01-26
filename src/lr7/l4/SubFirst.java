@@ -1,7 +1,7 @@
 package lr7.l4;
 
-public class SecondSubClass extends FirstSupClass {
-    SecondSubClass(char char1) {
+public class SubFirst extends Super {
+    SubFirst(char char1) {
         super(char1);
     }
     //Во втором классе появляется открытое текстовое поле
@@ -12,12 +12,12 @@ public class SecondSubClass extends FirstSupClass {
         this.str1 = str1;
     }
     //original конструктор
-    SecondSubClass(char char1, String str1) {
+    SubFirst(char char1, String str1) {
         super(char1);
         this.setChar1Str1(char1, str1);
     }
     //конструктор копии
-    SecondSubClass(SecondSubClass copy) {
+    SubFirst(SubFirst copy) {
         super(copy.char1);
         this.setChar1Str1(copy.char1, copy.str1);
     }

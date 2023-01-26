@@ -1,7 +1,7 @@
 package lr7.l4;
 
-public class ThirdSubClass extends SecondSubClass {
-    ThirdSubClass(char char1) {
+public class SubSecond extends SubFirst {
+    SubSecond(char char1) {
         super(char1);
     }
     //Во третьем классе появляется открытое целочисленное поле
@@ -13,12 +13,12 @@ public class ThirdSubClass extends SecondSubClass {
         this.int1 = int1;
     }
     //original конструктор
-    ThirdSubClass(char char1, String str1, int int1) {
+    SubSecond(char char1, String str1, int int1) {
         super(char1,str1);
         setChar1Str1Int1(super.char1, super.str1, int1);
     }
     //конструктор копии
-    ThirdSubClass(ThirdSubClass copy) {
+    SubSecond(SubSecond copy) {
         super(copy.char1, copy.str1);
         this.setChar1Str1Int1(copy.char1, copy.str1, copy.int1);
     }

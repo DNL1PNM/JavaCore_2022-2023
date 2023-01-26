@@ -1,18 +1,18 @@
 package lr7.l2;
 
-public class subClassTest extends superClassTest {
+public class subClass extends superClass {
     private String str2;
     //В подклассе появляется дополнительное открытое целочисленное поле.
     public int int1;
 
     //версия метода без параметров,
-    subClassTest() {setStr1();}
+    subClass() {setStr1();}
     //версия метода с текстовым параметром,
-    subClassTest(String str2) {setStr1(str2);}
+    subClass(String str2) {setStr1(str2);}
     //версия метода с целочисленным параметром,
-    subClassTest(int int1) {setStr1(); this.setInt1(int1);}
+    subClass(int int1) {setStr1(); this.setInt1(int1);}
     //версия метода с текстовым и целочисленным параметром.
-    subClassTest(String str2, int int1) {setStr1(str2); this.setInt1(int1);}
+    subClass(String str2, int int1) {setStr1(str2); this.setInt1(int1);}
 
     public void setInt1(int int1) {
         this.int1 = int1;
@@ -43,9 +43,8 @@ public class subClassTest extends superClassTest {
     //@Override - аннотация для указываемая для того, чтобы показать что далее мы собираемся переопределять метод суперкласса
     @Override
     public String toString() {
-        String ClassNameAndFieldValue = "subClassTest{" + "str2=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}"
-                +"\nsubClassTest{" + "int1=\"" + getInt1() + "\"}";
-        return ClassNameAndFieldValue;
+        return "subClass{" + "str2=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}"
+                +"\nsubClass{" + "int1=\"" + getInt1() + "\"}";
     }
 
 }

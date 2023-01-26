@@ -1,12 +1,12 @@
 package lr7.l2;
 
-public class superClassTest {
+public class superClass {
     //приватным текстовым полем.
     private String str1;
 
-    superClassTest() {setStr1();}
+    superClass() {setStr1();}
     //Объект суперкласса создается передачей одного текстового аргумента конструктору.
-    superClassTest (String str1){setStr1(str1);}
+    superClass (String str1){setStr1(str1);}
     //метод для присваивания значения полю без параметров
     public void setStr1 (){
         this.str1 = "здесь ничего нет";
@@ -22,6 +22,9 @@ public class superClassTest {
     }
     //Доступное только для чтения свойство результатом возвращает длину текстовой строки.
     public int getStr1length(){
+        if(null== this.str1){
+            return 0;
+        }
         //   System.out.println("Длина текстовой строки="+str1.length());
         return str1.length();
     }
@@ -29,7 +32,7 @@ public class superClassTest {
 
     @Override
     public String toString() {
-        String superClassNameAndFieldValue = "superClassTest{" + "str1=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}";
-        return superClassNameAndFieldValue;
+         return "superClass{" + "str1=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}";
+
     }
 }

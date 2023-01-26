@@ -1,7 +1,6 @@
 package lr6;
 
 public class Example4 {
-    public class Lab6_08_04 {
         public static void main(String[] args) {
             DoubleFactorial f = new DoubleFactorial();
             int number = 6;
@@ -37,5 +36,4 @@ public class Example4 {
                 return result;
             }
         }
-    }
 }

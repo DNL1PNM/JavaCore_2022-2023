@@ -1,9 +1,6 @@
 package lr7.l3;
 
-public class ThirdSubClass extends SecondSubClass{
-    ThirdSubClass(int int1) {
-        super(int1);
-    }
+public class SubSecond extends SubFirst {
     //В третьем классе появляется открытое текстовое ноле
     public String str2;
     //метод с тремя аргументами для присваивания значений полям (перегрузка метода из суперкласса)
@@ -13,17 +10,17 @@ public class ThirdSubClass extends SecondSubClass{
         this.str2 = str2;
     }
     //конструктор с тремя параметрами
-    ThirdSubClass(int int1, char char1, String str2) {
+    SubSecond(int int1, char char1, String str2) {
         super(int1,char1);
         setInt1Str1Str2(int1, char1, str2);
     }
 
     public String toString() {
-        String ThirdFieldValue =
-                "\n str 2 = " + this.getStr2();
-        return super.toString()+ThirdFieldValue;
+        String Info =
+                "\n Str 3 = " + this.getStr();
+        return super.toString()+Info;
     }
-    public String getStr2() {
+    public String getStr() {
         return str2;
     }
 }

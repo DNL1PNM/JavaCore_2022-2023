@@ -1,6 +1,6 @@
 package lr7.l5;
 
-public class SecondSubClass extends FirstSupClass {
+public class SubSecond extends Super {
 
     //защищенное символьное поле
     protected char char1;
@@ -9,7 +9,7 @@ public class SecondSubClass extends FirstSupClass {
         this.char1 = char1;
     }
     //конструктор с двумя параметрами
-    SecondSubClass(String str1, char char1) {
+    SubSecond(String str1, char char1) {
         super(str1);
         this.setChar1(char1);
     }
@@ -17,10 +17,10 @@ public class SecondSubClass extends FirstSupClass {
     //переопределен метод для отображения значений полей объекта и названия класса
     @Override
     public void PrintToString() {
-        String SecondFieldValue =
-                " char1 = \"" + this.getChar1()+"\"";
+        String SecondValue =
+                " char (sub) = \"" + this.getChar1()+"\"";
         super.PrintToString();
-        System.out.println(SecondFieldValue);
+        System.out.println(SecondValue);
     }
     public char getChar1() {
         return char1;

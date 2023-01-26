@@ -1,6 +1,6 @@
 package lr7.l5;
 
-public class FirstSubClass extends FirstSupClass {
+public class SubFirst extends Super {
 
     //защищенное целочисленное поле
     protected int int1;
@@ -9,7 +9,7 @@ public class FirstSubClass extends FirstSupClass {
         this.int1 = int1;
     }
     //конструктор с двумя параметрами
-    FirstSubClass(String str1, int int1) {
+    SubFirst(String str1, int int1) {
         super(str1);
         this.setInt1(int1);
     }
@@ -17,10 +17,10 @@ public class FirstSubClass extends FirstSupClass {
     //переопределен метод для отображения значений полей объекта и названия класса
     @Override
     public void PrintToString() {
-        String SecondFieldValue =
-                " int1 = \"" + this.getInt1()+"\"";
+        String SecondValue =
+                " int (sub) = \"" + this.getInt1()+"\"";
         super.PrintToString();
-        System.out.println(SecondFieldValue);
+        System.out.println(SecondValue);
     }
     public int getInt1() {
         return int1;

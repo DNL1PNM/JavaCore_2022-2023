@@ -1,6 +1,6 @@
 package lr7.l5;
 
-public class FirstSupClass {
+public class Super {
     //суперкласс с защищенным текстовым полем
     protected String str1;
 
@@ -8,16 +8,16 @@ public class FirstSupClass {
         this.str1 = str1;
     }
     //конструктор с текстовым параметром
-    FirstSupClass(String str1){
+    Super(String str1){
         this.setStr1(str1);
     }
     //метод, при вызове которого в консольном окне отображается название класса и значение поля
     public void PrintToString() {
-        String ClassNameAndFieldValue;
-        ClassNameAndFieldValue =
-                "\n Class name: " + this.getClass().getSimpleName() + "\n" +
-                        " String 1 = \"" + this.getStr1()+"\"";
-        System.out.println(ClassNameAndFieldValue);
+        String NameAndValue;
+        NameAndValue =
+                "\n Class name (super): " + this.getClass().getSimpleName() + "\n" +
+                        " String (super) = \"" + this.getStr1()+"\"";
+        System.out.println(NameAndValue);
     }
     public String getStr1() {
         return str1;

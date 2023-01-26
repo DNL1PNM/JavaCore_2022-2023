@@ -1,6 +1,6 @@
 package lr7.l4;
 
-public class FirstSupClass {
+public class Super {
     //В первом классе есть открытое символьное поле
     public char char1;
 
@@ -8,19 +8,19 @@ public class FirstSupClass {
         this.char1 = char1;
     }
     //конструктор с одним параметром
-    FirstSupClass(char char1){
+    Super(char char1){
         this.setChar1(char1);
     }
     //конструктор копии
-    FirstSupClass(FirstSupClass copy){ this.setChar1(copy.char1); }
+    Super(Super copy){ this.setChar1(copy.char1); }
 
     @Override
     public String toString() {
-        String ClassNameAndFieldValue;
-        ClassNameAndFieldValue =
-                " Class name: " + this.getClass().getSimpleName() + "\n" +
+        String InfoSup;
+        InfoSup =
+                "\n Class name: " + this.getClass().getSimpleName() + "\n" +
                         " char 1 = " + this.getChar1();
-        return ClassNameAndFieldValue;
+        return InfoSup;
     }
     public char getChar1() {
         return char1;
