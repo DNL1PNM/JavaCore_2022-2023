@@ -10,5 +10,9 @@ public class Main {
         Example3 example1 = new Example3();
         Example3 example2 = new Example3(int1);
         Example3 example3 = new Example3(int1,int2);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 }
