@@ -1,4 +1,4 @@
-package lr8.E5;
+package lr8.E3;
 import java.io.*;
 
 public class Main {
